@@ -15,9 +15,11 @@ app.use(express.static('public'))
 
 app.post('/name'  ,function (req, res) {
     var request = req.body.fname
+    var request2 = req.body.fname2
     console.log(request)
-    imagepro.processimage(request)
+    imagepro.processimage(request, request2)
     res.send('Got a POST request')
+    //hjdsafaf
   })
 
 
